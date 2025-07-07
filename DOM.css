@@ -1,0 +1,60 @@
+/* Style général du panier */
+#cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style du bouton like en forme de cœur */
+.like-btn {
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: grey; /* couleur par défaut */
+  transition: color 0.3s;
+}
+
+/* Lorsque liké, changer la couleur en rouge */
+.like-btn.liked {
+  color: red;
+}
+
+/* Style des boutons + et - */
+.increase, .decrease {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Style du bouton supprimer */
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Style du total */
+#total-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: right;
+}
